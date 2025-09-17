@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <script type="text/JavaScript">
+        function showButton_click() {
+          console.log("ShowButton_Clicked");
+          alert("Show Button Clicked")
+        }
+        function greetButton_click() {
+          console.log("Greet_Clicked");
+          alert("Greet_Clicked")
+        }
+    </script>
+</head>
+<body>
+    <input type="button" id="btnShow" value="Click Me" onclick="showButton_click();">
+    <button onmouseover="greetButton_click();">Greet</button>
+</body>
+</html>

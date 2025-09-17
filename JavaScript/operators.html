@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+
+    <script>
+        function operators()
+        {
+            // declare a variable;
+            var no1=30;
+            var no2=5;
+
+            // Arithmatic Operator
+
+            console.log(no1+" + "+no2 +" = "+(no1+no2));
+            console.log(no1+" - "+no2 +" = "+(no1-no2));
+            console.log(no1+" X "+no2 +" = "+(no1*no2));
+            console.log(no1+" / "+no2 +" = "+(no1/no2));
+
+            //comparison operators
+
+            console.log(10=='10');// TRUE
+            console.log(10==='10'); // FALSE
+            console.log(typeof('no2'));    
+            console.log("10>=10 => "+ (10>=10));   // false    
+        }
+
+        function showDay()
+        {
+            var day = parseInt(document.getElementById("dayInput").value);
+            console.log(typeof(day));
+            var dayName ;
+
+            switch(day)
+            {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+        
+            }
+
+            document.getElementById("result").innerHTML= "Today is " +dayName;
+
+            
+        }
+
+
+
+    </script>
+    
+</head>
+<body>
+    <button id="btnShow" onclick="operators();">show</button>
+    <br><br>
+    <input type="number" id = "dayInput" min="1" max="7" placeholder="Enter 1-7">
+    <br><br>
+    <button id="btnShowDay" onclick="showDay();">Check Day</button>
+
+    <br><br>
+    <p id="result"></p>
+
+</body>
+</html>

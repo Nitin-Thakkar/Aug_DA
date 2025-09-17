@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 2</title>
+    <script>
+        function greet()
+        {
+
+            console.log(document.getElementById("txtName").value);
+            alert("Welcome "+document.getElementById("txtName").value);
+        }
+    </script>
+</head>
+<body>
+    <label for="Name">Name :</label>
+    <input type="text" id="txtName" placeholder="Enter your Name">
+    <br><br>
+    <button id="btnGreet" onclick="greet();">Greet</button>
+</body>
+</html>

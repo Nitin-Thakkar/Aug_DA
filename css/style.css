@@ -1,0 +1,47 @@
+/* Tag name CSS selector */
+        h1,pre{
+            color :brown;
+            background-color: bisque;
+        }
+
+    /* Id css Selector */
+
+    #firstPara
+    {
+        font-size: larger;
+        color: chocolate;
+        font-weight: bold;
+        text-align: center;
+    }
+
+     /* Class css Selector */
+    .para
+    {
+        color: black;
+        background-color: rgb(208, 21, 21);
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #5682B1;
+    }
+
+    li a{
+        display: block;
+        padding: 8px 16px;
+        color: grey;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: brown;
+        color: white;
+    }
+
+    p{
+        border-style: solid;
+    }
+   

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML</title>
+</head>
+
+<body>
+    <input type="text" id="valueInput">
+    <br><br>
+    <button onclick="addVal();">Add to Array </button>
+
+    <p id="arrayOutput">[]</p>
+
+    <script>
+        let myArray = [];
+
+        function addVal() {
+            let val = document.getElementById("valueInput").value;
+
+            if (val === "") {
+                alert("Please Enter a value!")
+                return;
+            }
+            myArray.push(val);
+            document.getElementById("arrayOutput").innerHTML = JSON.stringify(myArray);
+
+            document.getElementById("valueInput").value = "";
+
+
+        }
+    </script>
+
+</body>
+
+</html>
